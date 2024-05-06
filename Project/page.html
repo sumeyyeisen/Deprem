@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo</title>
+
+    <style>
+        .panel {
+            background-color: #410c62;
+        }
+
+        .panel #a {
+            float: right;
+            display: flex;
+            color: #fff;
+            padding: 25px 10px 25px 20px;
+            text-decoration: none;
+            margin: 10px;
+            border-left: 1px solid #fff;
+        }
+
+        .b {
+            color: #fff;
+            display: inline-block;
+            padding-left: 20px;
+            font-size: 30px
+        }
+
+        body {
+            background-image: url("/image/wp.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .c {
+            border: 10px dashed #3a4b90;
+            float: right;
+            margin: 100px 150px 0px 10px;
+        }
+
+        .d {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #3a4b90;
+            float: right;
+            font-size: 40px;
+            flex-direction: column;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .e {
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 520px;
+            text-shadow: 20px -10px 15px rgb(68, 63, 63);
+        }
+
+        #f {
+            border-left: 50px solid #5188c4;
+            float: left;
+            margin: 30px;
+        }
+
+        .g {
+            background-color: #90A4AE;
+            color: #000;
+            border-bottom: 5px solid rgb(69, 44, 120);
+            border-top: 5px solid rgb(99, 43, 105);
+            padding: 0px;
+            margin-right: 1120px;
+            margin-top: 200px;
+            margin-left: 150px;
+            display: flex;
+        }
+
+        .photo {
+            border: 10px dashed #3a4b90;
+            float: left;
+            height: 500px;
+            width: 400px;
+            margin: 5px 10px 5px 75px;
+            margin-left: 10%;
+        }
+
+        .still {
+            background-color: #90A4AE;
+            color: #000;
+            border-bottom: 5px solid rgb(94, 47, 89);
+            border-top: 5px solid rgb(37, 14, 18);
+            margin: 75px 680px 10px 2px;
+            padding: 2px;
+            display: flex;
+        }
+
+        .h {
+            border: 12px double #3e253a;
+            margin-left: 39%;
+            margin-right: 25%;
+            margin-top: 50px;
+            background-color: #c6d4e9;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .i {
+            border: 12px double #3e253a;
+            background-color: #c6d4e9;
+        }
+
+        button {
+            background-color: #c6d4e9;
+            border: 5px double #3e253a;
+            margin-top: 20px;
+        }
+
+        .photo2 {
+            border: 10px dashed #000;
+            float: right;
+            height: 500px;
+            width: 400px;
+            margin: 200px 75px 5px 150px;
+            margin-left: 10%;
+        }
+
+        .sola-kaydir {
+            float: left;
+            margin: 200px 300px 0px 300px;
+            background-color: #90A4AE;
+            color: #000;
+            border-bottom: 5px solid rgb(94, 47, 89);
+            border-top: 5px solid rgb(37, 14, 18);
+            margin: 205px 60px 10px 300px;
+            padding: 2px;
+            display: flex;
+        }
+
+        .j {
+            border: 12px double #3e253a;
+            margin-left: 20%;
+            margin-right: 35%;
+            margin-top: 330px;
+            background-color: #c6d4e9;
+        }
+
+        .k {
+            background-color: #90A4AE;
+            color: #000;
+            border-bottom: 5px solid rgb(94, 47, 89);
+            border-top: 5px solid rgb(37, 14, 18);
+            margin: 75px 980px 10px 300px;
+            padding: 2px;
+            display: flex;
+        }
+
+        .l {
+            border: 12px double #3e253a;
+            margin-left: 293px;
+            background-color: #c6d4e9;
+        }
+
+        .button {
+            background-color: #c6d4e9;
+            border: 5px double #3e253a;
+            margin-top: 20px;
+            margin-left: 293px;
+        }
+
+        .photo3 {
+            border: 10px dashed #fff;
+            float: left;
+            height: 500px;
+            width: 400px;
+            margin: 200px 10px 5px 75px;
+            margin-left: 10%;
+        }
+
+        .m {
+            margin-top: 250px;
+        }
+
+        .n {
+            float: left;
+            background-color: #90A4AE;
+            color: #000;
+            border-bottom: 5px solid rgb(94, 47, 89);
+            border-top: 5px solid rgb(37, 14, 18);
+            margin-left: 40px;
+        }
+
+        .o {
+            border: 12px double #3e253a;
+            background-color: #c6d4e9;
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        r {
+            margin-top: 50000px;
+            background-color: #7d4d7b;
+            text-align: center;
+            color: #f8d7da;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input[type=text] {
+            padding: 7px 50px;
+            margin: 8px 10px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            background-color: black;
+        }
+
+        .button2 {
+            border: none;
+            color: white;
+            padding: 1px 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button3 {
+            background-color: white;
+            color: black;
+            border: 3px solid #a31555;
+        }
+
+        .button3:hover {
+            background-color: #a31555;
+            color: black;
+        }
+
+        .panel #s {
+            float: right;
+            display: flex;
+            color: #fff;
+            padding: 30px 50px 30px 50px;
+            text-decoration: none;
+            margin: 7px;
+            border-left: 1px solid #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border: 3px solid #3367af;
+
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        summary {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        summary:hover:not(.active) {
+            background-color: #111;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #3e1f61;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="panel" id="ilk">
+        <p class="b">SÜMEYYE İSEN</p>
+        <a id="a" href="#social">Sosyal Medya</a>
+        <a id="a" href="#contact">İletişim</a>
+        <a id="a" href="#about">Hakkımda</a>
+        <a id="a" href="#homepage" style="border-left: none;">Anasayfa</a>
+    </div>
+    <hr id="homepage" style="height:2px;border-width:0;color:gray;background-color:#ffffff">
+
+    <div>
+        <img class="c" style="height: 500px;" src="/image/ben.jpg" alt="Sumeyye ISEN" title="Sümeyye İSEN">
+
+        <p class="d">BEN SÜMEYYE İSEN</p>
+        <p class="e"><i>Merhaba, ben dijital resim, kıyafet tasarımı ve doğa fotoğraflarıyla ilgilenen bir yazılım
+                mühendisliği öğrencisiyim.</i></p>
+
+    </div> <br><br><br><br><br><br><br><br><br><br>
+
+    <ul>
+        <li>
+            <details open="">
+                <summary> ▶Dijital Resimlerim💌</summary>
+                <div>
+                    <a href="#aaa">Vargas Resmi</a>
+                    <a href="#bbb">Manzara Resmi</a>
+                    <a href="#ccc">Kapı Resmi</a>
+                    <a href="#ddd">Minimal Resimler</a>
+                </div>
+            </details>
+        </li>
+
+        <li>
+            <details open="">
+                <summary> ▶Kıyafet Tasarımlarım💌</summary>
+                <div>
+                    <a href="#eee">Kadın Baskılı Tişört</a>
+                    <a href="#fff">Rick And Morty Baskılı Tişört</a>
+                    <a href="#ggg">Telefon Kılıfı</a>
+                    <a href="#hhh">Rick and Morty Sweatshirt</a>
+                </div>
+            </details>
+        </li>
+
+        <li>
+            <details open="">
+                <summary> ▶Doğa Fotoğraflarım💌</summary>
+                <div>
+                    <a href="#iii">Dağ Manzarası</a>
+                    <a href="#jjj">Köprü Manzarası</a>
+                    <a href="#kkk">Gökyüzü Manzarası</a>
+                    <a href="#lll">Deniz Manzarası</a>
+                </div>
+            </details>
+        </li>
+    </ul>
+
+    <main id="page">
+
+        <h2 class="g">Dijital Resimlerim💌</h2>
+        <img class="photo" id="aaa" src="image/resim1.jpg">
+
+        <h2 class="still">Resim Hakkında Bilgi</h2>
+        <div class="h">
+            <p style="text-align: center;">Bu resmi 16 Eylül 2023 tarihinde Sketchbook uygulamasını kullanarak çizdim
+            </p>
+        </div>
+
+        <div>
+            <form action="">
+                <h2>
+                    <p class="still"><label for="gorus">Fikir ve Görüşleriniz:</label><br /></p>
+                </h2>
+                <textarea id="gorus" name="gorus" class="i" rows="4" cols="71"></textarea> <br>
+                <button onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br><br>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+            </form>
+        </div>
+
+        <img class="photo2" id="bbb" src="image/manzara.jpg">
+
+        <h2 class="sola-kaydir">Resim Hakkında Bilgi</h2>
+        <div class="j">
+            <p
+                style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Bu resmi 9 Ocak 2022 tarihinde Notability uygulamasını kullanarak çizdim</p>
+        </div>
+        <div>
+            <form action="">
+                <h2>
+                    <p class="k"><label for="gorus1">Fikir ve Görüşleriniz:</label><br /></p>
+                </h2>
+                <textarea id="gorus1" name="gorus1" class="l" rows="4" cols="71"></textarea> <br>
+                <button style="margin-left: 295px;"
+                    onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br><br><br><br><br>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+            </form>
+        </div>
+
+        <img class="photo3" id="ccc" src="/image/IMG_1706.jpg">
+
+        <main class="m">
+            <h2 class="still">Resim Hakkında Bilgi</h2>
+            <div class="h">
+                <p
+                    style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Bu resmi 26 Şubat 2022 tarihinde Notability uygulamasını kullanarak çizdim</p>
+            </div>
+
+            <div>
+                <form action="">
+                    <h2>
+                        <p class="still"><label for="gorus2">Fikir ve Görüşleriniz:</label><br /></p>
+                    </h2>
+                    <textarea id="gorus2" name="gorus2" class="i" rows="4" cols="71"></textarea> <br><br><br>
+                    <button style="margin-left: 5px; margin-top: 1px;"
+                        onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+                </form>
+            </div>
+        </main>
+
+        <div id="ddd">
+            <img style="border: 5px dashed #000; margin-top: 150px; float: right;" src="/image/IMG_1040.jpg" width="283"
+                height="392">
+            <img style="border: 5px dashed #000; margin-top: 150px; float: right; " src="/image/IMG_1041.jpg"
+                width="283" height="392">
+            <img style="border: 5px dashed #000; margin-top: 150px; float: right;" src="/image/IMG_1043.jpg" width="283"
+                height="392">
+            <img style="border: 5px dashed #000; margin-top: 150px; float: right;" src="/image/IMG_1044.jpg" width="283"
+                height="392">
+            <img style="border: 5px dashed #000; margin-top: 150px; float: right; margin-bottom: 25px;"
+                src="/image/IMG_1045.jpg" width="283" height="392">
+        </div>
+
+        <div>
+            <h2 class="n">Resimler Hakkında Bilgi</h2>
+        </div>
+        <div class="o">
+            <p
+                style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Resimleri Notability uygulamasını kullanarak çizdim</p>
+        </div>
+
+        <div>
+            <form action="">
+                <h2>
+                    <p class="n"><label for="gorus3">Fikir ve Görüşleriniz:</label><br /></p>
+                </h2>
+                <textarea class="o" id="gorus3" name="gorus3" class="i" rows="3" cols="40"></textarea> <br><br><br>
+                <button style="margin-top: 40px; float: left; margin-left: 10px;"
+                    onclick="document.write('Öneriniz için teşekkürler') ">Gönder</button>
+            </form>
+        </div>
+    </main>
+
+    <main>
+        <div style="background-color: teal; color: aliceblue; text-align: center; font-size: 20px; margin-top: 830px;">
+            <h4>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ffffff">
+                <script>
+                    function gizleGoster(ID) {
+                        var sec = document.getElementById(ID);
+                        if (sec.style.display == "none") {
+                            sec.style.display = "";
+                        } else {
+                            sec.style.display = "none";
+                        }
+                    }
+                </script>
+                <button onclick="gizleGoster('sonuc');">⬇ 💌 ⬇</button>
+                <p id="sonuc">
+                    <marquee direction="right">Kıyafet tasarımlarımı görmeye ne dersin ?</marquee>
+                </p>
+                <hr style="height:2px;border-width:0;color:gray;background-color:#ffffff">
+            </h4>
+        </div>
+    </main>
+
+    <main id="dress">
+        <h2 class="g">Kıyafet Tasarımlarım💌</h2>
+
+        <img class="photo" id="eee" style="border: 10px dashed rgb(38, 30, 82);" src="/image/IMG-20240103-WA0009.jpg">
+
+        <h2 class="still">Kıyafet Hakkında Bilgi</h2>
+        <div class="h">
+            <p style="text-align: center;">Farklı görselleri birleştirip tişört tasarladım</p>
+        </div>
+
+        <h2 class="still">Satın Almak İçin</h2>
+        <button style="float: left; margin-top: 40px; background-color: #90A4AE;"><a
+                style="color: #000; text-decoration: none;" href="#contact"><b>İletişime Geçiniz</b></a></button>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+
+        <img class="photo2" id="fff" style="margin-top: 200px;" src="/image/IMG-20240103-WA0013.jpg">
+
+        <h2 class="sola-kaydir">Kıyafet Bakkında Bilgi</h2>
+        <div class="j"
+            style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <p>İzlediğim çizgi dizinin olduğu bir tişört tasarladım</p>
+        </div>
+
+        <h2 class="k">Satın Almak İçin</h2>
+        <button style="margin-left: 300px; background-color: #90A4AE;"><a style="color: #000; text-decoration: none;"
+                href="#contact"><b>İletişime Geçiniz</b></a></button>
+        <br><br><br><br><br><br><br><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+
+
+        <img class="photo3" id="ggg" style="border: 10px dashed rgb(38, 30, 82);" src="/image/IMG-20240103-WA0011.jpg">
+
+        <main class="m">
+            <h2 class="still">Ürün Hakkında Bilgi</h2>
+            <div class="h" style="text-align: center;">
+                <p>Farklı görselleri bir araya getirerek bir telefon kılıfı tasarladım</p>
+            </div>
+
+            <h2 class="still">Satın Almak İçin</h2>
+            <button style="float: left; margin-top: 40px; background-color: #90A4AE;"><a
+                    style="color: #000; text-decoration: none;" href="#contact"><b>İletişime Geçiniz</b></a></button>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+
+            <img class="photo2" id="hhh" style="margin-top: 200px; border-color: #90A4AE;"
+                src="/image/IMG-20240103-WA0010.jpg">
+
+            <h2 class="sola-kaydir">Kıyafet Hakkında Bilgi</h2>
+            <div class="j"
+                style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                <p>İzlediğim çizgi dizinin olduğu bir tişört tasarladım</p>
+            </div>
+
+            <h2 class="k">Satın Almak İçin</h2>
+            <button style="margin-left: 300px; background-color: #90A4AE;"><a
+                    style="color: #000; text-decoration: none;" href="#contact"><b>İletişime Geçiniz</b></a></button>
+        </main>
+        <br><br><br><br><br><br><br><br><br><br>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#c17db9">
+
+        <main>
+            <div
+                style="background-color: teal; color: aliceblue; text-align: center; font-size: 20px; margin-top: 170px;">
+                <h4>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:#ffffff">
+                    <script>
+                        function gizleGoster(ID) {
+                            var sec = document.getElementById(ID);
+                            if (sec.style.display == "none") {
+                                sec.style.display = "";
+                            } else {
+                                sec.style.display = "none";
+                            }
+                        }
+                    </script>
+                    <button onclick="gizleGoster('sonuc1');">⬇ 💌 ⬇</button>
+                    <p id="sonuc1">
+                        <marquee direction="right">Doğa fotoğraflarımı görmeye ne dersin ?</marquee>
+                    </p>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:#ffffff">
+                </h4>
+            </div>
+        </main>
+
+        <main id="picture">
+            <h2 class="g">Doğa Fotoğraflarım</h2>
+            <img class="photo" id="iii" src="image/fotogrf.jpg">
+
+            <h2 class="still">Resim Hakkında Bilgi</h2>
+            <div class="h">
+                <p>Bu fotoğrafı 31 Aralık 2022 tarihinde Muğla'da çektim</p>
+            </div>
+
+            <div>
+                <form action="">
+                    <h2>
+                        <p class="still"><label for="gorus4">Fikir ve Görüşleriniz:</label><br /></p>
+                    </h2>
+                    <textarea id="gorus4" name="gorus4" class="i" rows="4" cols="71"></textarea> <br>
+                    <button
+                        onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br><br>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:#251824">
+                </form>
+            </div>
+
+            <img class="photo2" id="jjj" src="image/IMG-20240108-WA0002.jpg">
+
+            <h2 class="sola-kaydir">Resim Hakkında Bilgi</h2>
+            <div class="j">
+                <p
+                    style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Bu fotoğrafı 5 Temmuz 2023 tarihinde İstanbul'da çektim</p>
+            </div>
+            <div>
+                <form action="">
+                    <h2>
+                        <p class="k"><label for="gorus5">Fikir ve Görüşleriniz:</label><br /></p>
+                    </h2>
+                    <textarea id="gorus5" name="gorus5" class="l" rows="4" cols="71"></textarea> <br>
+                    <button style="margin-left: 295px;"
+                        onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br><br><br><br><br>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:#281225">
+                </form>
+            </div>
+
+            <img class="photo3" id="kkk" style="border-color: #945165;" src="/image/IMG-20240108-WA0001.jpg">
+
+            <main class="m">
+                <h2 class="still">Resim Hakkında Bilgi</h2>
+                <div class="h">
+                    <p>Bu fotoğrafı 31 Aralık 2022 tarihinde Muğla'da çektim</p>
+                </div>
+
+                <div>
+                    <form action="">
+                        <h2>
+                            <p class="still"><label for="gorus6">Fikir ve Görüşleriniz:</label><br /></p>
+                        </h2>
+                        <textarea id="gorus6" name="gorus6" class="i" rows="4" cols="71"></textarea> <br><br><br>
+                        <button style="margin-left: 5px;"
+                            onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br>
+                        <hr style="height:2px;border-width:0;color:gray;background-color:#2a2028">
+                    </form>
+                </div>
+            </main>
+
+            <img class="photo2" id="lll" style="border-color: #3a4b90;" src="image/foto.jpg">
+
+            <h2 class="sola-kaydir">Resim Hakkında Bilgi</h2>
+            <div class="j"
+                style="text-align: center; font-size: 18px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                <p>Bu fotoğrafı 4 Temmuz 2023 tarihinde İstanbul'da çektim.</p>
+            </div>
+            <div>
+                <form action="">
+                    <h2>
+                        <p class="k"><label for="gorus7">Fikir ve Görüşleriniz:</label><br /></p>
+                    </h2>
+                    <textarea id="gorus7" name="gorus7" class="l" rows="4" cols="71"></textarea> <br>
+                    <button style="margin-left: 295px;"
+                        onclick="document.write('Öneriniz için teşekkürler')">Gönder</button><br><br><br><br><br><br><br><br><br>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:#221a21">
+                </form>
+            </div>
+        </main>
+
+        <main id="about"><img src="/image/bn.png" alt="Sumeyye" height="772" width="579" style="float: right;">
+
+            <br><br><br><br><br><br><br><br><br>
+            <fieldset
+                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: 30px; border: 7px outset black;">
+                <legend
+                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 60px; text-shadow: 15px -10px 13px #4f545a;">
+                    Hakkımda</legend>
+                <br>Ben Sümeyye İSEN, <br>
+                Yazılım Mühendisliği 2.sınıf öğrencisiyim. <br>
+                2004 yılında Bursa'da doğdum. Ailemin en küçük çocuğuyum.
+                Küçüklüğümden itibaren resim çizmeyi ve fotoğraf çekmeyi çok severim. Başlarda
+                kağıda resimler çizerdim. Sonrasında dijital resim ve kıyafet baskı tasarımları
+                da ilgimi çekmeye başladı. Şu anda vakit ayırmakta zorlansam da web sitesi
+                tasarlamak gibi bölümümle ilgili alanlarda hala zevkle uğraşıyorum. Umarım
+                okuduğum bölümde başarılı olabilmeyi ve hobilerime vakit ayırabilmeyi başarabilirim.
+
+            </fieldset><br><br><br><br><br><br><br>
+            <hr style="height:2px;border-width:0;color:gray;background-color:#000000">
+
+            <main id="contact" style="background-color: black;">
+                <br><br><br>
+                <h1
+                    style="text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #ffffff;">
+                    <i>BANA ULAŞIN</i></h1>
+                <h2
+                    style="text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #ffffff;">
+                    Öneriniz ve diğer işlemleriniz için iletişime geçebilirsiniz</h2><br><br><br>
+
+                <fieldset style="text-align: center; border-color: #000; border: 10px; color:#fff ;">
+
+
+
+                    <script>
+                        function kontrolet() {
+                            var name = document.getElementById("name").value;
+                            var regex = /^[A-Za-z\s]+$/;
+                            if (regex.test(name) == true) { alert("adı geçerli"); }
+                            else { alert("Hata geçersiz ad girdiniz!"); }
+                        }
+                    </script>
+
+                    <form>
+                        <label for="name"
+                            style="color: #ffffff; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            <h3>Adınız</h3>
+                        </label><br>
+                        <input style="color: #fff;" type="text" id="name" name="name">
+                        <input type="button" class="button2 button3" onclick="kontrolet();" value="kontrol💌"> <br><br>
+                    </form>
+
+
+
+                    <script>
+                        function kontrolet1() {
+                            var surname = document.getElementById("surname").value;
+                            var regex = /^[A-Za-z\s]+$/;
+                            if (regex.test(surname) == true) { alert("soyadı geçerli"); }
+                            else { alert("Hata geçersiz soyadı girdiniz!"); }
+                        }
+                    </script>
+
+                    <form>
+                        <label for="surname"
+                            style="color: #ffffff; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            <h3>Soyadınız</h3>
+                        </label><br>
+                        <input style="color: #fff;" type="text" name="surname" id="surname">
+                        <input type="button" class="button2 button3" onclick="kontrolet1();" value="kontrol💌"><br><br>
+                    </form>
+
+
+                    <script>
+                        function kontrolet2() {
+                            var mail = document.getElementById("mail").value;
+                            var regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zAZ0-9.-]{2,4}$/;
+                            if (regex.test(mail) == true) { alert("Mail adresi geçerli"); }
+                            else { alert("Hata geçersiz mail adresi girdiniz!"); }
+                        }
+                    </script>
+
+                    <form>
+                        <label for="mail"
+                            style="color: #ffffff; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            <h3>E-postanız</h3>
+                        </label><br>
+                        <input style="color: #fff;" type="text" name="mail" id="mail">
+                        <input type="button" class="button2 button3" onclick="kontrolet2();" value="kontrol💌"><br><br>
+                    </form>
+
+
+                    <script>
+                        function kontrolet3() {
+                            var subject = document.getElementById("subject").value;
+                            var regex = /^[A-Za-z\s]+$/;
+                            if (regex.test(subject) == true) { alert("Konunuz geçerli"); }
+                            else { alert("Hata geçersiz konu girdiniz!"); }
+                        }
+                    </script>
+
+
+                    <form>
+                        <label for="subject"
+                            style="color: #ffffff; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            <h3>Konunuz</h3>
+                        </label><br>
+                        <input style="color: #fff;" type="text" name="subject" id="subject">
+                        <input type="button" class="button2 button3" onclick="kontrolet3();" value="kontrol💌">
+                        <br><br><br>
+                    </form>
+
+                    <button class="button2 button3" style="font-size: 20px;"
+                        onclick="alert('İletişime geçtiğiniz için teşekkürler')"><b>Gönder</b></button>
+
+                </fieldset>
+            </main>
+            <hr style="height:2px;border-width:0;color:gray;background-color:#221a21">
+
+            <div id="social" class="panel" style="background-color: #000;">
+                <p class="b"><a href="#ilk" style="color: #fff; text-decoration: none;">BAŞA DÖN ⬆</a></p>
+                <a id="s" href="mailto:sumeyyeisen@icloud.com" target="_blank"><img src="/image/mail.jpg" height="25"
+                        width="32"></a>
+                <a id="s" href="https://vsco.co/sumeyyeisn/gallery" target="_blank"><img src="/image/vsco.jpg"
+                        height="28" width="28"></a>
+                <a id="s" href="https://www.instagram.com/sumeyyeisn?igsh=MXM4MjdjaHZlOHZyYQ==" target="_blank"><img
+                        src="/image/insta.jpg" height="28" width="28"></a>
+            </div>
+
+            <footer
+                style="margin-top: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 15px;">
+                2024, SÜMEYYE İSEN <object
+                    data="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Copyright.svg/1200px-Copyright.svg.png"
+                    width="10" height="10"></object>
+            </footer>
+
+
+            <script>
+                alert("Bu sayfada gördüğünüz her ürünün tasarımı Sümeyye İsen'e aittir");
+            </script>
+
+            <script>
+                alert("Tasarımları izinsiz olarak almayınız");
+            </script>
+
+</body>
+
+</html>
